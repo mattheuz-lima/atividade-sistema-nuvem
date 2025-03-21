@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Ajuste o tamanho do site em todos navegadores -->
+  <meta name="HandheldFriendly" content="true">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <!-- Título do site -->
+  <title>Cadastre-se no Curso</title>
+
+  <!-- Descrição do site -->
+  <meta name="description" content="Aqui fica a descrição do site montado 100% com HTML e CSS">
+
+  <!-- Cor principal do site em HEX -->
+  <meta name="theme-color" content="#D60000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#D60000">
+
+  <!-- Favicon do site -->
+  <link rel="shortcut icon" href="/pagina-captura/arquivos/index/favicon.png">
+
+
+
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:card" content="summary_large_image">
+
+  <!-- Importação do CSS -->
+  <link href="./css/index/index.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Section Captura do site -->
+<section class="captura" style="background-image: url('./arquivos/index/BannerCaptura.jpg')">
+  <!-- Quadro -->
+  <div class="quadro">  
+    <h1>Cadastre-se no curso de Front-End </h1>
+    <p>Faça sua conta e garanta sua evolução carreira como Dev.</p>
+
+
+
+    <!-- Formulário -->
+<form id="signupForm">
+
+  <label for="name">Nome</label>
+  <div class="input">
+    <img src="./arquivos/index/icone-perfil-branco.png" alt="Ícone Nome">
+    <input type="text" id="name" autocomplete="name" placeholder="Digite seu nome" spellcheck="false" required>
+  </div>
+
+  <label for="email">E-mail</label>
+  <div class="input">
+    <img src="./arquivos/index/email.svg" alt="Ícone E-mail">
+    <input type="email" id="email" autocomplete="email" placeholder="email@email.com" spellcheck="false" required>
+  </div>
+
+  <label for="password">Senha</label>
+  <div class="input">
+    <img src="./arquivos/index/passwords.png" alt="Ícone Senha">
+    <input type="password" id="password" autocomplete="current-password" placeholder="Crie sua senha" spellcheck="false" required>
+  </div>
+
+  <button type="submit">CADASTRE-SE</button>
+
+  <a href="/pagina-captura/login.html" target="_blank" id="LinkLogin">Já tenho conta</a>
+</form>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="/pagina-captura/js/forms.js"></script>
+
+    <script>
+
+
+      // Captura o formulário
+      const form = document.getElementById('signupForm');
+
+      // Adiciona um evento de escuta para o envio do formulário
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault(); // Evita o comportamento padrão do formulário
+
+        // Obtém os valores dos campos
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        try {
+          // Faz a requisição POST para o servidor usando Axios
+          const response = await axios.post('http://localhost:3000/users', {
+            name,
+            email,
+            password,
+          });
+
+          // Mostra mensagem de sucesso
+          alert(response.data.message);
+        } catch (error) {
+          // Mostra mensagem de erro
+          alert('Erro ao cadastrar usuário. Tente novamente!');
+          console.error(error);
+        }
+      });
+    </script>
+
+  </div>
+  <!-- Circulo -->
+  <div class="circulo"></div>
+  <!-- Sombra -->
+  <div class="sombra"></div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Desenvolvido por Alunos Ads | Unifor</p>
+  </footer>
+
+  <!-- Importação do JAVASCRIPT -->
+  <script src="./js/bloquear-arrasta.js"></script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/duvidas.js"></script>
+
+</body>
+</html>

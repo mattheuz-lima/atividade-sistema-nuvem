@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Ajuste o tamanho do site em todos navegadores -->
+  <meta name="HandheldFriendly" content="true">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+  <title>Atualizar Dados</title>
+
+
+  <meta name="theme-color" content="#D60000">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#D60000">
+
+  <!-- Favicon do site -->
+  <link rel="shortcut icon" href="/pagina-captura/arquivos/index/favicon.png">
+
+
+
+  <meta property="og:image:width" content="1920">
+  <meta property="og:image:height" content="1080">
+  <meta property="og:card" content="summary_large_image">
+
+  <!-- Importação do CSS -->
+  <link href="./css/index/index.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Section Captura do site -->
+<section class="captura" style="background-image: url('./arquivos/index/BannerCaptura.jpg')">
+  <!-- Quadro -->
+  <div class="quadro">  
+    <h1>Atualize seus Dados</h1>
+    <p>Preencha todos os campos do formulário com seus dados.</p>
+
+    <!-- Formulário -->
+
+    <form id="updateForm">
+        <!-- Campo Nome -->
+        <label>Nome</label>
+        <div class="input">
+          <img src="./arquivos/index/icone-perfil-branco.png">
+          <input type="text" id="name" autocomplete="name" placeholder="Alterar nome" spellcheck="false" required>
+        </div>
+        <!-- Campo E-mail -->
+        <label>E-mail</label>
+        <div class="input">
+          <img src="./arquivos/index/email.svg">
+          <input type="email" id="email" autocomplete="email" placeholder="Alterar e-mail" spellcheck="false" required>
+        </div>
+        <!-- Campo Senha -->
+        <label>Senha</label>
+        <div class="input">
+          <img src="./arquivos/index/passwords.png">
+          <input type="password" id="password" autocomplete="current-password" placeholder="Alterar senha" spellcheck="false" required>
+        </div>
+
+        <!-- Botão para enviar -->
+        <button type="submit">ATUALIZAR DADOS</button>
+      </form>
+
+
+  </div>
+  <!-- Circulo -->
+  <div class="circulo"></div>
+  <!-- Sombra -->
+  <div class="sombra"></div>
+</section>
+
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>Desenvolvido por Alunos Ads | Unifor</p>
+  </footer>
+
+  <!-- Importação do JAVASCRIPT -->
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/atualizarDados.js"></script>
+  <script src="./js/bloquear-arrasta.js"></script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/duvidas.js"></script>
+
+</body>
+</html>
