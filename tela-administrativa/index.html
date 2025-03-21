@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Administrativa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/landing-page/images/favicon.png">
+
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+
+      <a href="#" class="logo">
+        <img src="imagens/shodwe.png" alt="Logo">
+    </a>
+
+
+        <div class="user-menu">
+          <img src="imagens/icone-perfil-branco.png" alt="Usuário" class="user-icon" onclick="toggleMenu()">
+            <div class="dropdown-menu" id="dropdownMenu">
+                <button onclick="editarPerfil()">Editar Perfil</button>
+                <button onclick="excluirUsuario()">Excluir Perfil</button>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Seção Principal (Pode ser expandida no futuro) -->
+    <section class="main-content">
+        <h2>Área administrativa do aluno!</h2>
+        <p>Acesse seu curso de forma objetiva e alcace seu resultados.</p>
+        <!-- Adicionar mais conteúdo conforme necessário -->
+    </section>
+
+
+   <!-- Section com vídeo retangular -->
+<section class="video">
+    <!-- Título -->
+    <div class="titulo">
+      <h2>Acesse os vídeos para iniciar seu curso</h2>
+      <p>Ao longo do curso, você desenvolverá habilidades essenciais para resolver problemas e criar soluções tecnológicas, capacitando-se para atuar no mercado de trabalho.</p>
+    </div>
+    <!-- Vídeo -->
+    <div class="video-container">
+      <div class="tamanho">
+        <iframe id="panda-ee8a865f-9f0c-4b98-982b-d85dd7b411b1" src="https://player-vz-b7ed6a49-37b.tv.pandavideo.com.br/embed/?v=ee8a865f-9f0c-4b98-982b-d85dd7b411b1" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=true fetchpriority="high"></iframe>
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Desenvolvido por Alunos Ads | Unifor</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

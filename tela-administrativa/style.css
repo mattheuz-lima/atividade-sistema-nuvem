@@ -1,0 +1,224 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+
+}
+
+header .logo  img {
+   height: 3rem;
+}
+
+header .nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0 0 0 900px;
+    padding: 0;
+    text-decoration: underline;
+}
+
+header .nav ul li a:hover {
+    color: #fff; /* Cor do texto no hover */
+    background-color: #53a2ec; /* Cor de fundo no hover */
+    padding: 8px;
+    border-radius: 6px;
+    transform: translateY(-3px); /* Leve elevação para um efeito de flutuar */
+}
+
+header .nav ul li {
+    margin: 0 10px;
+}
+
+header .nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .user-menu {
+    position: relative;
+}
+
+header .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+
+}
+
+header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header .dropdown-menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+
+header .dropdown-menu button:hover {
+    background-color: #f0f0f0;
+}
+
+main {
+    padding: 20px;
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 0px 0 0px 0;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+/*ESTILIZANDO EMAIL QUE APARECE DEPOIS DO LOGIN*/
+.email-usuario {
+    font-size: 16px;
+    color: #ffffff;  /* Cor verde */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+footer {
+    background-color: #222fe6;
+    padding: 2px;
+    text-align: center;
+}
+
+footer p{
+    color: #ffff;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px 10px 20px; 
+    }
+
+    header .nav {
+        display: none; 
+    }
+
+    header .logo img {
+        height: 2.5rem; 
+    }
+
+    header .user-menu img {
+        width: 35px;
+        height: 35px;
+    }
+    /*FIMMMMM*/
+
+    .main-content {
+        padding: 15px;
+    }
+
+
+
+  header .logo {
+    font-size: rem;
+    font-weight: bold;
+}
+
+
+  .main-content h2{
+    text-align: center;
+  }
+
+  .main-content p{
+    text-align: center;
+  }
+
+  .titulo h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #fff;
+
+  }
+
+  .email-usuario{
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+/* Estilo geral da section */
+.video {
+    background-color: #13131a;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 140vh; /* A altura da seção ocupa 100% da altura da tela */
+    text-align: center; /* Alinha o texto do título e parágrafo ao centro */
+    padding: 20px;
+  }
+
+  /* Estilo para o título */
+  .titulo h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+
+  .titulo p {
+    font-size: 1rem;
+    max-width: 700px;
+    line-height: 1.5;
+    margin: 0 auto 20px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+
+  /* Estilo para o container do vídeo */
+  .video-container {
+    display: flex;
+    justify-content: center; /* Centraliza o vídeo horizontalmente */
+    width: 100%;
+  }
+
+  /* Estilo para o tamanho do iframe */
+  .tamanho {
+    max-width: 900px;
+    width: 100%; /* Faz o iframe ocupar toda a largura disponível, respeitando o max-width */
+    height: 600px; /* Define uma altura fixa para o vídeo */
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
