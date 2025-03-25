@@ -1,0 +1,5 @@
+/* Muda a cor da seleção de texto */
+::selection {
+  color: var(--cor-cinza-escuro);
+  background-color: var(--cor-principal);
+}
