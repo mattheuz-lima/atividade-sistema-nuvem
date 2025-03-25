@@ -1,8 +1,0 @@
-/* Importanto as configurações globais de CSS */
-@import '../global/global.css';
-
-/* Seções que tem na página */
-@import './partes/section-captura.css';
-@import './partes/section-quadros.css';
-@import './partes/section-duvidas.css';
-@import './partes/footer.css';
