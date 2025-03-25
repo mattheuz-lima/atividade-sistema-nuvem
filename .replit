@@ -1,3 +1,7 @@
+ landing-page
+[nix]
+channel = "stable-24_05"
+
 tela-administrativa
 [nix]
 channel = "stable-24_05"
@@ -15,3 +19,4 @@ localPort = 3000
 externalPort = 80
  main
  main
+main
