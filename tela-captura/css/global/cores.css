@@ -1,0 +1,9 @@
+/* Essas são as cores usadas na página toda,
+modificando aqui a página toda muda a cor */
+:root {
+  --cor-branco: #FFFFFF;
+  --cor-preto: #000000;
+  --cor-cinza-escuro: #0d0d0d;
+  --cor-cinza-claro: #d9d9d9;
+  --cor-principal: #222fe6;
+}
