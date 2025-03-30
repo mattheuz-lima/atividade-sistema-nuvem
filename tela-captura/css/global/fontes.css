@@ -1,0 +1,22 @@
+/* Fontes para usar no site */
+@font-face {
+  font-family: 'montserrat-black';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../arquivos/fontes/montserrat-black.woff') format('woff');
+}
+@font-face {
+  font-family: 'montserrat-bold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../arquivos/fontes/montserrat-bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'montserrat-medium';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../arquivos/fontes/montserrat-medium.woff') format('woff');
+}
