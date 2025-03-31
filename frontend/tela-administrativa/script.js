@@ -7,7 +7,7 @@ function toggleMenu() {
 // Função para editar perfil
 function editarPerfil() {
     alert("Redirecionando para a edição de perfil...");
-    window.location.href = "/pagina-captura/atualizarDados.html";  // Redireciona para tela de Atualizar dados
+    window.location.href = "./tela-captura/atualizarDados.html";  // Redireciona para tela de Atualizar dados
 }
 
 // FUNÇÃO PARA DELETAR USUARIO LOGADO - ENVIA A REQUISIÇÃO DELETE PARA O BACKEND
@@ -26,7 +26,7 @@ async function excluirUsuario() {
             if (response.status === 200) {
                 alert("Usuário excluído com sucesso!");
                 localStorage.removeItem("authToken");  // Remove o token do localStorage
-                window.location.href = "/pagina-captura/cadastro.html";  // Redireciona para o cadastro
+                window.location.href = "/tela-captura/cadastro.html";  // Redireciona para o cadastro
             }
         } catch (error) {
             console.error("Erro ao excluir usuário:", error);
